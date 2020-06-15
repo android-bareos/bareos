@@ -1048,6 +1048,8 @@ rm -f %{buildroot}%{plugin_dir}/bareos-fd-vmware.py*
 
 
 
+# cleanup bareos-webui
+rm -Rf %{buildroot}/usr/share/bareos-webui
 
 # install systemd service files
 %if 0%{?systemd_support}
