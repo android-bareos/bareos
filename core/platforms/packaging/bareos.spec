@@ -924,7 +924,7 @@ cmake  .. \
 # run unit tests
 pushd %{CMAKE_BUILDDIR}
 make clean
-ctest -V -D Continuous || result=$?
+REGRESS_DEBUG=1 ctest -V -D Continuous || result=$?
 result=$?
 if [ $result -eq 1 ]; then
   echo "ctest result $result is expected and OK"
