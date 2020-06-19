@@ -95,5 +95,5 @@ install(PROGRAMS "bareos-dir-restart" "bareos-dir-restart-on-change"
 install(CODE "set(PROJECT_SOURCE_DIR \"${PROJECT_SOURCE_DIR}\")")
 install(
   SCRIPT
-    ${PROJECT_SOURCE_DIR}/cmake/install-univention-extra-configuration.cmake
+    ${PROJECT_SOURCE_DIR}/core/cmake/install-univention-extra-configuration.cmake
 )
