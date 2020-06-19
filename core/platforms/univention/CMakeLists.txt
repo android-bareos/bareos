@@ -17,7 +17,7 @@
 #   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 #   02110-1301, USA.
 
-file(MAKE_DIRECTORY "${PROJECT_SOURCE_DIR}/AppCenter/")
+file(MAKE_DIRECTORY "${CMAKE_SOURCE_DIR}/AppCenter/")
 
 file(
   COPY "AppCenter/LICENSE_AGREEMENT"
@@ -26,17 +26,17 @@ file(
        "AppCenter/bareos-webui_screenshot.png"
        "../../src/images/bareos-logo.svg"
        "../../src/images/bareos-logo-full.svg"
-  DESTINATION "${PROJECT_SOURCE_DIR}/AppCenter/"
+  DESTINATION "${CMAKE_SOURCE_DIR}/AppCenter/"
 )
 
 file(COPY "${CMAKE_CURRENT_LIST_DIR}/conffiles/"
-     DESTINATION "${PROJECT_SOURCE_DIR}/conffiles/"
+     DESTINATION "${CMAKE_SOURCE_DIR}/conffiles/"
 )
 
 add_custom_command(
   OUTPUT univention-install-config-registry
   COMMAND
-    ${PROJECT_SOURCE_DIR}/platforms/univention/create_ucs_template_files.sh
+    ${CMAKE_SOURCE_DIR}/platforms/univention/create_ucs_template_files.sh
     conffiles/
   COMMAND univention-install-config-registry -v
   WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
@@ -92,8 +92,8 @@ install(PROGRAMS "bareos-dir-restart" "bareos-dir-restart-on-change"
         DESTINATION "/usr/share/univention-bareos/"
 )
 
-install(CODE "set(PROJECT_SOURCE_DIR \"${PROJECT_SOURCE_DIR}\")")
+install(CODE "set(CMAKE_SOURCE_DIR \"${CMAKE_SOURCE_DIR}\")")
 install(
   SCRIPT
-    ${PROJECT_SOURCE_DIR}/core/cmake/install-univention-extra-configuration.cmake
+    ${CMAKE_SOURCE_DIR}/core/cmake/install-univention-extra-configuration.cmake
 )
