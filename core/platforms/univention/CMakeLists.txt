@@ -36,7 +36,7 @@ file(COPY "${CMAKE_CURRENT_LIST_DIR}/conffiles/"
 add_custom_command(
   OUTPUT univention-install-config-registry
   COMMAND
-    ${PROJECT_SOURCE_DIR}/core/platforms/univention/create_ucs_template_files.sh
+    ${PROJECT_SOURCE_DIR}/platforms/univention/create_ucs_template_files.sh
     conffiles/
   COMMAND univention-install-config-registry -v
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
@@ -95,5 +95,5 @@ install(PROGRAMS "bareos-dir-restart" "bareos-dir-restart-on-change"
 install(CODE "set(PROJECT_SOURCE_DIR \"${PROJECT_SOURCE_DIR}\")")
 install(
   SCRIPT
-    ${PROJECT_SOURCE_DIR}/core/cmake/install-univention-extra-configuration.cmake
+    ${PROJECT_SOURCE_DIR}/cmake/install-univention-extra-configuration.cmake
 )
