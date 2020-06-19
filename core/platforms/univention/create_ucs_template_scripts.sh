@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -x
 SOURCE=$1
 DEST=$2
 

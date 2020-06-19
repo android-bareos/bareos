@@ -39,7 +39,7 @@ add_custom_command(
     ${PROJECT_SOURCE_DIR}/platforms/univention/create_ucs_template_files.sh
     conffiles/
   COMMAND univention-install-config-registry -v
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/core
 )
 
 add_custom_target(run ALL DEPENDS univention-install-config-registry)
