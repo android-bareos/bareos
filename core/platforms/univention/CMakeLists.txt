@@ -36,7 +36,7 @@ file(COPY "${CMAKE_CURRENT_LIST_DIR}/conffiles/"
 add_custom_command(
   OUTPUT univention-install-config-registry
   COMMAND
-    ${CMAKE_SOURCE_DIR}/platforms/univention/create_ucs_template_files.sh
+    ${CMAKE_SOURCE_DIR}/core/platforms/univention/create_ucs_template_files.sh
     conffiles/
   COMMAND univention-install-config-registry -v
   WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
