@@ -19,11 +19,11 @@
 
 message(
   STATUS
-    "${CMAKE_SOURCE_DIR}/platform/univention/create_ucs_template_scripts.sh ${CMAKE_SOURCE_DIR} $ENV{DESTDIR}/etc/univention/templates/scripts/"
+    "${CMAKE_SOURCE_DIR}/core/platform/univention/create_ucs_template_scripts.sh ${CMAKE_SOURCE_DIR} $ENV{DESTDIR}/etc/univention/templates/scripts/"
 )
 
 execute_process(
   COMMAND
-    ${CMAKE_SOURCE_DIR}/platforms/univention/create_ucs_template_scripts.sh
+    ${CMAKE_SOURCE_DIR}/core/platforms/univention/create_ucs_template_scripts.sh
     ${CMAKE_SOURCE_DIR} $ENV{DESTDIR}/etc/univention/templates/scripts/
 )
