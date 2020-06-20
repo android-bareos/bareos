@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 # include set_config_param()
-. scripts/bareos-config-lib.sh
+. core/scripts/bareos-config-lib.sh
 
 create_config_resource_template()
 {
