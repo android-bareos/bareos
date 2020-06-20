@@ -1,5 +1,5 @@
 #!/bin/bash
-set +x
+set -x
 # include set_config_param()
 . scripts/bareos-config-lib.sh
 
