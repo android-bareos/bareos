@@ -31,6 +31,7 @@ create_config_resource_template()
 
 DEST_DIR=$1
 
+echo "DEST_DIR=$DEST_DIR"
 #
 # bareos-sd
 #
