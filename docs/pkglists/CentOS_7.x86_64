@@ -1,14 +1,14 @@
 debug/x86_64/bareos-debuginfo
 debug/x86_64/bareos-vadp-dumper-debuginfo
-debug/x86_64/libdroplet-debuginfo-3.0.git.1513628829.3b092e5-01.x86_64.rpm
+debug/x86_64/libdroplet-debuginfo
 noarch/bareos-webui
 noarch/python-bareos
 noarch/python3-bareos
 src/bareos
 src/bareos-vadp-dumper
-src/bareos-vmware-vix-disklib-6.5.2_6195444-2.el7.src.rpm
+src/bareos-vmware-vix-disklib
 src/bareos-webui
-src/libdroplet-3.0.git.1513628829.3b092e5-01.src.rpm
+src/libdroplet
 src/python-bareos
 x86_64/bareos
 x86_64/bareos-bconsole
@@ -41,6 +41,6 @@ x86_64/bareos-traymonitor
 x86_64/bareos-vadp-dumper
 x86_64/bareos-vmware-plugin
 x86_64/bareos-vmware-plugin-compat
-x86_64/bareos-vmware-vix-disklib-6.5.2_6195444-2.el7.x86_64.rpm
-x86_64/libdroplet-3.0.git.1513628829.3b092e5-01.x86_64.rpm
-x86_64/libdroplet-devel-3.0.git.1513628829.3b092e5-01.x86_64.rpm
+x86_64/bareos-vmware-vix-disklib
+x86_64/libdroplet
+x86_64/libdroplet-devel
