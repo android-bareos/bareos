@@ -1,5 +1,3 @@
-bareos.com-filedaemon-python-plugin
-bareos.com-storage-tape
 bareos.com-bconsole
 bareos.com-common
 bareos.com-database-common
@@ -7,5 +5,7 @@ bareos.com-database-postgresql
 bareos.com-database-tools
 bareos.com-director
 bareos.com-filedaemon
+bareos.com-filedaemon-python-plugin
 bareos.com-storage
+bareos.com-storage-tape
 bareos.com-tools
