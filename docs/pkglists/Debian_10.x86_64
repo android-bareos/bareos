@@ -1,6 +1,6 @@
 all/bareos-webui
-all/python3-bareos
 all/python-bareos
+all/python3-bareos
 amd64/bareos
 amd64/bareos-bconsole
 amd64/bareos-client
@@ -28,7 +28,5 @@ amd64/bareos-storage-tape
 amd64/bareos-tools
 amd64/bareos-traymonitor
 amd64/bareos-vadp-dumper
-amd64/bareos-vadp-dumper-dbgsym
 amd64/bareos-vmware-plugin
-amd64/bareos-vmware-plugin-compat
 amd64/bareos-vmware-vix-disklib
