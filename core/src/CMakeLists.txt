@@ -18,6 +18,7 @@
 #   02110-1301, USA.
 message("Entering ${CMAKE_CURRENT_SOURCE_DIR}")
 
+add_subdirectory(filed)
 if(NOT client-only)
   # droplet does not build on solaris because of sys/cdefs.h: No such file or
   # directory
@@ -52,7 +53,6 @@ if(${HAVE_LMDB})
 endif()
 add_subdirectory(lib)
 add_subdirectory(findlib)
-add_subdirectory(filed)
 add_subdirectory(plugins)
 add_subdirectory(fastlz)
 if(${traymonitor})

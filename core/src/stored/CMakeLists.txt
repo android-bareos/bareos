@@ -250,7 +250,6 @@ install(TARGETS bareos-sd bls bextract bscan btape bcopy
         DESTINATION "${sbindir}"
 )
 
-install(CODE "set(PLUGINS \"${PLUGINS}\")")
 install(CODE "set(BACKENDS \"${BACKENDS}\")")
 install(CODE "set(configtemplatedir \"${configtemplatedir}\")")
 install(CODE "set(SRC_DIR \"${PROJECT_SOURCE_DIR}\")")
