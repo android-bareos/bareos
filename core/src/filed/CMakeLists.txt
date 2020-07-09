@@ -112,7 +112,6 @@ install(
 )
 
 install(CODE "set(PLUGINS \"${PLUGINS}\")" COMPONENT filedaemon)
-install(CODE "set(BACKENDS \"${BACKENDS}\")" COMPONENT filedaemon)
 install(CODE "set(configtemplatedir \"${configtemplatedir}\")"
         COMPONENT filedaemon
 )
