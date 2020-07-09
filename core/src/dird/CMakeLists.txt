@@ -179,6 +179,7 @@ install(TARGETS bareos-dir bareos-dbcheck DESTINATION "${sbindir}")
 
 install(FILES query.sql DESTINATION "${scriptdir}")
 
+message("using BACKENDS: ${BACKENDS}")
 install(CODE "set(BACKENDS \"${BACKENDS}\")")
 install(CODE "set(configtemplatedir \"${configtemplatedir}\")")
 install(CODE "set(SRC_DIR \"${PROJECT_SOURCE_DIR}\")")
